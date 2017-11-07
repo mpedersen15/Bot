@@ -19,10 +19,10 @@ public class ComedianBot extends JokeBot {
     }
 
     public void sayIntroduction() {
-        System.out.println("Hello, my name is " + this.name + ", and I'm here to make you laugh!");
+        talk("Hello, my name is " + this.name + ", and I'm here to make you laugh!");
     }
 
     public void sayGoodnight() {
-        System.out.println("Thank you all, you've been a great audience! Goodnight!");
+        talk("Thank you all, you've been a great audience! Goodnight!");
     }
 }

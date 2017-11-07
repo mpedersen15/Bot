@@ -13,6 +13,12 @@ public class JokeBot extends Bot {
         this.jokes = jokes;
     }
 
+    public void tellRandomJoke() {
+        int randomIndex = (int) (Math.random()*jokes.size());
+
+        sayJoke(jokes.get(randomIndex));
+    }
+
     public void sayJoke(Joke joke){
         talk(joke.getJokeSetup() + " " + joke.getJokePunchline());
     }
